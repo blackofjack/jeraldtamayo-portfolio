@@ -655,6 +655,21 @@ a .floating-btn{
   grid-template-columns: 1fr;
 }
 
+.about h2{
+  text-align: center;
+}
+
+.skill{
+  font-size: var(--title-h3-l);
+}
+
+.project h2,
+.githubsection h2,
+.services h2,
+.experience h2 {
+  text-align: center;
+}
+
 .contact-info h2{
   font-size: var(--title-h3-l);
   text-align: center;
@@ -676,6 +691,8 @@ p.typewritter {
   }
 
 }
+
+
 
 @media (max-width:320px) {
   .projList img {
