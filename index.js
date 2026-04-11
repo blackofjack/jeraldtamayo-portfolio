@@ -10,55 +10,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //api call
 
-// (function() {
-//   emailjs.init("A7OqR4LJyL1_59JIb"); // 👈 replace this
-// })();
+(function() {
+  emailjs.init("A7OqR4LJyL1_59JIb"); // 👈 replace this
+})();
 
-// emailjs.init("A7OqR4LJyL1_59JIb");
+emailjs.init("A7OqR4LJyL1_59JIb");
 
-// const form = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
 
-// form.addEventListener("submit", function(e) {
-//   e.preventDefault();
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
 
-//   emailjs.sendForm(
-//     "service_y5ele2a",
-//     "template_b5tcwlu",
-//     this
-//   )
-//   .then(() => {
-//     alert("Message sent 🚀");
-//     form.reset();
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//     alert("Failed 😢");
-//   });
-// });
-
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const templateParams = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value
-    };
-
-    console.log(templateParams);
-
-    emailjs.send("service_y5ele2a", "template_b5tcwlu", templateParams)
-      .then(() => {
-        alert("Message sent 🚀");
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  emailjs.sendForm(
+    "service_y5ele2a",
+    "template_b5tcwlu",
+    this
+  )
+  .then(() => {
+    alert("Message sent 🚀");
+    form.reset();
+  })
+  .catch((err) => {
+    console.log(err);
+    alert("Failed 😢");
   });
 });
+
+
 
 //floating button
 
