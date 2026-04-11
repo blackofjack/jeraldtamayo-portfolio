@@ -562,13 +562,13 @@ a .floating-btn{
       gap:10px;
     }
   .menu.active{
-      /* display:flex; */
+      display:flex;
       width: 100%;
     }
 
-  /* .toggle-hamburger{
+  .toggle-hamburger{
       display:flex;
-    } */
+    }
 
  .banner{
   text-align: center;
