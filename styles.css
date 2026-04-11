@@ -627,7 +627,6 @@ a .floating-btn {
   }
 
   .servicelist {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 35px;
     margin-top: 35px;
