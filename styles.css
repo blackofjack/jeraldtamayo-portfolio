@@ -401,8 +401,9 @@ p.typewritter {
 }
 
 .contact-info h2 {
-  font-size: var(--title-h3-l);
+  font-size: var(--title-h1-l);
   text-align: left;
+  padding: 0;
 }
 
 .contact-section {
