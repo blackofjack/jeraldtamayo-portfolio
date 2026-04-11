@@ -596,6 +596,10 @@ a .floating-btn {
     gap: 10px;
   }
 
+  .menu ul li a .active{
+    padding:15px 0;
+  }
+
   .menu.active {
     display: flex;
     width: 100%;
