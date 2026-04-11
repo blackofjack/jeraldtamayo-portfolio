@@ -707,8 +707,15 @@ a .floating-btn {
   }
 
  .project p{
-  line-height: 0.5rem;
+  line-height: 0.75rem;
+  text-align: center;
  }
+
+ .githubsection{
+  line-height: 0.75rem;
+   text-align: center;
+ }
+
 
 .contact-info h2 {
   font-size: var(--title-h3-l);
