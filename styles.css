@@ -707,12 +707,12 @@ a .floating-btn {
   }
 
  .project p{
-  line-height: 0.75rem;
+  line-height: 1.5rem;
   text-align: center;
  }
 
- .githubsection{
-  line-height: 0.75rem;
+ .githubsection p{
+  line-height: 1.5rem;
    text-align: center;
  }
 
