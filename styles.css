@@ -397,7 +397,7 @@ p.typewritter {
 }
 
 .contactus h2 {
-  padding: 35px 0;
+  padding-bottom: 1rem;
 }
 
 .contact-info h2 {
@@ -721,9 +721,9 @@ a .floating-btn {
   padding: 15px 0;
 }
 
-.contactus h2 {
-  padding: 25px 0 0 0;
-}
+/* .contactus h2 {
+ padding-bottom: 1rem;
+} */
 
 .social-media {
   flex-direction: column;
