@@ -492,8 +492,8 @@ button:hover {
 
 .socmed a:hover{
     transform: translateY(-2px);
-    text-shadow: 0 0 8px #ffffff,
-                 0 0 16px #ffffff;
+    text-shadow: 0 0 8px #00ff15,
+                 0 0 16px #00ff15;
     background-color: transparent;
    
 }

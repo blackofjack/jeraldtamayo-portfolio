@@ -49,3 +49,7 @@ window.onscroll = function() {
     btn.style.display = "none";
   }
 };
+
+//year dynamic
+
+document.getElementById("year").textContent = new Date().getFullYear();
