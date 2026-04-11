@@ -51,5 +51,4 @@ window.onscroll = function() {
 };
 
 //year dynamic
-
 document.getElementById("year").textContent = new Date().getFullYear();
