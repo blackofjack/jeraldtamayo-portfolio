@@ -168,6 +168,15 @@ li a:hover::after {
   border-bottom: 1px solid rgb(70, 70, 70);
 }
 
+.image img{
+  width:auto;
+  height:300px;
+  border-radius: 50%;
+  border:6px solid white;
+  object-fit: cover;
+
+}
+
 .banner p {
   line-height: 2rem;
  
@@ -189,14 +198,7 @@ ul li::marker {
     color: rgb(255, 255, 255); /* change to any color */
 }
 
-.image img{
-  width:auto;
-  height:300px;
-  border-radius: 50%;
-  border:6px solid white;
-  object-fit: cover;
 
-}
 
 /* skill */
 
@@ -666,6 +668,12 @@ a .floating-btn{
  flex-direction: column;
  font-size:1rem;
 }
+
+p.typewritter {
+    font-size: 14px; /* scale text */
+    border-right: 2px solid #fff;
+    animation: typing 4s steps(25, end), blink-caret .75s step-end infinite;
+  }
 
 }
 
