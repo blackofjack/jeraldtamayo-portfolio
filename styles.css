@@ -401,7 +401,8 @@ p.typewritter {
 }
 
 .contact-info h2 {
-  font-size: var(--title-h2-xl);
+  font-size: var(--title-h3-l);
+  text-align: left;
 }
 
 .contact-section {
@@ -712,9 +713,6 @@ a .floating-btn {
   line-height: 1.5rem;
   text-align: center;
  }
-
-
-
 
 .contact-info h2 {
   font-size: var(--title-h3-l);
