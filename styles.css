@@ -392,11 +392,11 @@ p.typewritter {
   border-bottom: 1px solid rgb(70, 70, 70);
 }
 
-.contactus h1 {
+.contactus h2 {
   text-align: center;
 }
 
-.contactus h1 {
+.contactus h2 {
   padding: 35px 0;
 }
 
@@ -693,7 +693,7 @@ a .floating-btn {
   .about h2 {
     text-align: center;
   }
-
+  .contact-info h2
   .skill h2 {
     font-size: var(--title-h3-l);
   }
@@ -705,16 +705,15 @@ a .floating-btn {
   .experience h2 {
     text-align: center;
   }
-
+ 
+ .experience
+ .githubsection p
  .project p{
   line-height: 1.5rem;
   text-align: center;
  }
 
- .githubsection p{
-  line-height: 1.5rem;
-   text-align: center;
- }
+
 
 
 .contact-info h2 {
@@ -723,7 +722,7 @@ a .floating-btn {
   padding: 0 0 15px 0;
 }
 
-.contactus h1 {
+.contactus h2 {
   padding: 25px 0 0 0;
 }
 
