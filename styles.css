@@ -330,7 +330,6 @@ p.typewritter {
 .servicelist {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
   gap: 35px;
   margin-top: 35px;
 
@@ -585,8 +584,8 @@ a .floating-btn {
   }
 
   .menu ul li {
-    padding: 5px 5px;
-    border-bottom: var(--border-btn-stnrd)
+    padding: 15px 5px;
+    border-bottom: var(--border-btn-stnrd);
   }
 
   .menu ul {
@@ -594,10 +593,6 @@ a .floating-btn {
     flex-direction: column;
     width: 100%;
     gap: 10px;
-  }
-
-  .menu ul li a .active{
-    padding:15px 0;
   }
 
   .menu.active {
@@ -634,7 +629,6 @@ a .floating-btn {
   .servicelist {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     gap: 35px;
     margin-top: 35px;
   }
@@ -653,7 +647,6 @@ a .floating-btn {
 
   body {
     margin: 0;
-
   }
 
   .banner {
@@ -680,12 +673,10 @@ a .floating-btn {
 
   .expiList .projLogo {
     order: -1;
-    /*   to re-arrange the section  */
     text-align: center;
   }
 
   .expiList {
-    display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     gap: 10px;
@@ -702,7 +693,6 @@ a .floating-btn {
   .skill h2 {
     font-size: var(--title-h3-l);
   }
-
 
   .project h2,
   .githubsection h2,
@@ -724,10 +714,6 @@ a .floating-btn {
   padding: 15px 0;
 }
 
-/* .contactus h2 {
- padding-bottom: 1rem;
-} */
-
 .social-media {
   flex-direction: column;
   font-size: 1rem;
@@ -741,8 +727,6 @@ p.typewritter {
 }
 
 }
-
-
 
 @media (max-width:320px) {
   .projList img {
