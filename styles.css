@@ -122,7 +122,6 @@ li a:hover::after {
   display: inline-flex;
   justify-content: right;
   gap: 35px;
-  text-align:center;
 }
 
 .logo img {
@@ -601,6 +600,8 @@ a .floating-btn {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+    text-align:center;
+
   }
 
   .menu.active {
