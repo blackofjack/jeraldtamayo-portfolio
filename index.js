@@ -36,8 +36,6 @@ form.addEventListener("submit", function(e) {
   });
 });
 
-
-
 //floating button
 
 window.onscroll = function() {
