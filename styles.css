@@ -524,6 +524,13 @@ button:hover {
 
 }
 
+.hireme {
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px #ffffff,
+    0 0 16px #ffffff;
+  background-color: transparent;
+}
+
 .footernote p {
   padding: 35px 0;
   text-align: center;
