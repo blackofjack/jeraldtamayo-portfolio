@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bubble Sort Visual</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    /* height: 200px; */
+    margin-top: 20px;
+  }
+
+  .box {
+    width: 50px;
+    background: #38bdf8;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: rgb(247 134 34);
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .active { background: #facc15; }
+  .swap { background: #f87171; }
+
+  input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Bubble Sort Visual</h1>
+
+<input id="inputArray" placeholder="Enter numbers (e.g. 5,4,3,2,1)" />
+
+<br>
+
+<button onclick="generateArray()">Generate</button>
+<button onclick="startSort()">Start Sorting</button>
+
+<div class="container" id="container"></div>
+
+<script>
+let arr = []
+
+const container = document.getElementById("container")
+
+function renderArray(array) {
+  container.innerHTML = ""
+  array.forEach(value => {
+    const div = document.createElement("div")
+    div.classList.add("box")
+    div.style.height = value * 2 + "px"
+    div.textContent = value
+    container.appendChild(div)
+  })
+}
+
+// 🎯 Convert input → array
+function generateArray() {
+  const input = document.getElementById("inputArray").value
+
+  arr = input
+    .split(",")
+    .map(num => parseInt(num.trim()))
+    .filter(num => !isNaN(num))
+
+  renderArray(arr)
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+async function bubbleSortVisual(numbers) {
+  let length = numbers.length
+
+  for (let i = 0; i < length; i++) {
+    for (let j = 0; j < length - 1 - i; j++) {
+
+      let boxes = document.getElementsByClassName("box")
+
+      boxes[j].classList.add("active")
+      boxes[j + 1].classList.add("active")
+
+      await sleep(400)
+
+      if (numbers[j] > numbers[j + 1]) {
+
+        boxes[j].classList.add("swap")
+        boxes[j + 1].classList.add("swap")
+
+        ;[numbers[j], numbers[j + 1]] = [numbers[j + 1], numbers[j]]
+
+        renderArray(numbers)
+        await sleep(400)
+      }
+
+      renderArray(numbers)
+    }
+  }
+}
+
+function startSort() {
+  if (arr.length === 0) {
+    alert("Enter numbers first 👀")
+    return
+  }
+  bubbleSortVisual(arr)
+}
+</script>
+
+</body>
+</html>
